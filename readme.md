@@ -21,5 +21,7 @@ Once installed, you can use MyLang to write and execute your own programs. Here'
 * **Run Your Program**: Use the MyLang interpreter to run your program. If you created an alias, you can simply type `mylang your_program.myl` to execute it.
 * **Explore the Language**: MyLang features a unique syntax and is designed for simplicity and ease of use. Take some time to explore the language and its features to get the most out of it.
 
-## Warnings:
+## Warning
+
 * **Warning**: MyLang is still in its early stages of development. it is not functional yet.
+* **Warning**: At the end of a file always needs to be a empty line because the program wont read the last line.

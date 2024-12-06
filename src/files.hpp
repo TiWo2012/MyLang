@@ -16,3 +16,5 @@ struct contents
 
 
 contents cat_file(const std::filesystem::path &file_path);
+
+void print_contents(const contents &contents);

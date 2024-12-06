@@ -1,1 +1,12 @@
-test
+fun main()
+{
+    let i:int = 0;
+    while (true)
+    {
+        print(i);
+
+        i++;
+    }
+
+    return void;
+}

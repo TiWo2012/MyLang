@@ -16,7 +16,7 @@ all: $(BIN_DIR)/mylang
 
 # Link the object files to create the executable
 $(BIN_DIR)/mylang: $(OBJ_FILES)
-	$(CXX) $(OBJ_FILES) -o $(BIN_DIR)/mylang $(CXXFLAGS)
+	$(CXX) $(OBJ_FILES) -o $(BIN_DIR)/myl $(CXXFLAGS)
 
 # Compile individual source files into object files
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp

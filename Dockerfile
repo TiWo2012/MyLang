@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 
 # Set up SSH server and create a user for SSH login
 RUN mkdir /var/run/sshd
-RUN useradd -m dockeruser && echo "dockeruser:Timo" | chpasswd
+RUN useradd -m dockeruser && echo "dockeruser:user" | chpasswd
 RUN chmod 777 /home/dockeruser
 
 # Expose SSH port

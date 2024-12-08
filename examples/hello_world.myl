@@ -1,0 +1,6 @@
+let test = 'hello world';
+let x = 5;
+
+print($test);
+
+return x;

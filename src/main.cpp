@@ -4,26 +4,38 @@ int main(int argc, char **argv)
 {
     if (argc < 2)
     {
-        std::cout << "Error: No file provided\n";
-
+        std::cerr << "Error: No file provided\n";
         return 1;
     }
-    else if (argc < 3)
+
+    contents file_content = cat_file(std::filesystem::path(argv[1]));
+    std::optional<std::string> output_filename;
+    bool print_flag = false;
+
+    for (int i = 2; i < argc; ++i)
     {
-        std::cout << "Warning: No arguments specified\n";
-    }
+        std::string arg = argv[i];
 
-    {
-
-        contents file_content = cat_file(std::filesystem::path(argv[1]));
-
-        if (std::string(argv[2]) == "--print")
+        if (arg == "-p")
         {
-            print_contents(file_content);
-
-            return 0;
+            print_flag = true;
+        }
+        else if (arg == "-o" && i + 1 < argc)
+        {
+            output_filename = argv[++i]; // Get the next argument as the filename
+        }
+        else
+        {
+            std::cerr << "Error: Unknown argument " << arg << "\n";
+            return 1;
         }
     }
 
+    if (print_flag)
+    {
+        print_contents(file_content);
+    }
+
+    runn_code(file_content, output_filename);
     return 0;
 }

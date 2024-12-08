@@ -23,10 +23,10 @@ Once installed, you can use MyLang to write and execute your own programs. Here'
 
 ## testing
 
-files for testing purposes cann be found under the `./examples/` folder found. You cann modify any of the files in the folder as long as you dont commit to the repository I am down. If you got a realy good program submit a pull request so I cann have a look at it.
+files for testing purposes can be found under the `./examples/` folder found. You can modify any of the files in the folder as long as you don't commit to the repository I am down. If you got a really good program submit a pull request so I can have a look at it.
 
 ## Warning
 
 * **Warning**: MyLang is still in its early stages of development. it is not functional yet.
 * **Warning**: At the end of a file always needs to be a empty line because the program wont read the last line.
-* **Warning**: Only works on MacOs and Linux because it gets compiled/interperted into Bash.(`.sh`)
+* **Warning**: Only works on MacOs and Linux because it gets compiled/interpreted into Bash.(`.sh`)

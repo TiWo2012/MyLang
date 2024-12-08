@@ -6,4 +6,3 @@ obj/*
 out
 out.sh
 make.sh
-test.s

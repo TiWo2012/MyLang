@@ -5,6 +5,8 @@ It features a unique syntax and is intended for educational purposes.
 
 I would be glad for any Feedback.
 
+Have a look at the [Documentation](docs.md).
+
 ## Installation
 
 To install MyLang, follow these steps:
@@ -18,7 +20,7 @@ To install MyLang, follow these steps:
 Once installed, you can use MyLang to write and execute your own programs. Here's a brief overview of how to get started:
 
 * **Write Your Program**: Create a new file with a `.myl` extension and start writing your program using the MyLang syntax.
-* **Run Your Program**: Use the MyLang interpreter to run your program. If you created an alias, you can simply type `mylang your_program.myl` to execute it.
+* **Run Your Program**: Use the MyLang interpreter to run your program. If you created an alias, you can simply type `<alias/pathToExecutable> your_program.myl <arguments>` to execute it.
 * **Explore the Language**: MyLang features a unique syntax and is designed for simplicity and ease of use. Take some time to explore the language and its features to get the most out of it.
 
 ## testing

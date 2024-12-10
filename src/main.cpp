@@ -17,6 +17,8 @@ int main(int argc, char **argv)
     std::optional<std::string> output_filename;
     bool print_flag = false;
 
+    std::string Version = "Version 1.0";
+
     for (int i = 2; i < argc; ++i)
     {
         std::string arg = argv[i];
@@ -28,6 +30,9 @@ int main(int argc, char **argv)
         else if (arg == "-o" && i + 1 < argc)
         {
             output_filename = argv[++i]; // Get the next argument as the filename
+        }
+        else if (arg == "-v") {
+            std::cout << Version << std::endl;
         }
         else
         {

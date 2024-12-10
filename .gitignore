@@ -2,7 +2,7 @@ bin/*
 obj/*
 .vscode/
 .DS_Store
-.git/
+.git/*
 out
 out.sh
 make.sh

@@ -164,7 +164,7 @@ void runn_code(const contents &code, const std::optional<std::string> &filename)
     output << handle(code).str();
 
     // Determine output filename
-    std::string output_filename = filename.value_or("out.sh");
+    std::string output_filename = filename.value_or("out");
 
     // Write the output to a file
     std::ofstream File(output_filename);
